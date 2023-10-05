@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio11</title>
+</head>
+<body>
+    <center><h1>uso de MAtrices</h1></center>
+</body>
+</html>
+
+<script>
+    let matriz = [] //inicializamos una matriz vacia 
+    let matriz2 = [[1,2,3], [4,5,6], [7,8,9]] //inicializamos una matriz con elementos en este caso es un 3x3
+    console.log (matriz2 [0][0])
+    console.log (matriz2 [3][0])
+
+    //cambiamos valores d ela matriz
+    //llamamos matriz
+    //matriz2[0][0] = 0
+    //console.log(matriz2[0][0])
+
+    for(let i=0; i<matriz2.length; i++){
+        for(let j=0; j<matriz2.length; j++){
+            console.log(matriz2[i][j])// imprime todos los elemnetos de la matriz 
+        }
+    }
+
+
+    //para insertar datos a una matriz usando con push
+    matriz.push(1)
+    //insertar datos en una matriz ya con datos
+    let matriz3 = [[1,2,3], [4,5,6]]
+    matriz.push([7,8,9])//insertamos datos con el emetodo push
+    matriz3([0][0]).push(10)
+    
+    //matriz aplanada convertir una matriz en un vector simple 
+    let aplanada = matriz2.flat()
+    console.log(aplanada)
+
+    //operadores de propagacion
+    var max=Math.max(...aplanada)
+    console.log(max)
+</script>

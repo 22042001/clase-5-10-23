@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluacion</title>
+</head>
+<body>
+    <center><h1>Evaluacion1</h1></center>
+</body>
+</html>
+
+<script>
+    //se inicializa un array vacio
+    let mapa = [];
+
+    // Crea la matriz de 5x5 
+    for (let i = 0; i < 5; i++) {
+        mapa[i] = [];
+        for (let j = 0; j < 5; j++) {
+            mapa[i][j] = 0;
+        }
+    }
+
+    //genera un numero aleatorio de 0 a 4 para la fila
+    //genera un numero aleatorio de 0 a 4 para la columna 
+    let filaTesoro = Math.floor(Math.random() * 5); 
+    let columnaTesoro = Math.floor(Math.random() * 5);
+
+    // coloca el tesoro en su posicion
+    mapa[filaTesoro][columnaTesoro] = 't';
+
+    // pide al usuario ingrese la fila y columna
+    let fila_usuario = prompt("Ingrese una fila (0-4):");
+    let columna_usuario = prompt("Ingrese una columna (0-4):");
+
+    // comprueba si la posicion que ingreso el usuario tiene el tesoro
+    if (mapa[fila_usuario][columna_usuario] === 't') {
+        alert("¡Has encontrado el tesoro!");
+    } else {
+        alert("¡No hay tesoro aquí! Intenta de nuevo.");
+    }
+
+    // muestra la matriz y su ubicacion con una X en donde se encuentra el tesoro
+    
+</script>
