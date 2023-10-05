@@ -42,5 +42,17 @@
     }
 
     // muestra la matriz y su ubicacion con una X en donde se encuentra el tesoro
-    
+    document.write("La matriz es: ");
+    document.write("<br>");
+
+    for (let i = 0; i < 5; i++) {
+        for (let j = 0; j < 5; j++) {
+            if (i == fila_usuario && j == columna_usuario) {
+                document.write('X ');
+            } else {
+                document.write(mapa[i][j] + " ");
+            }
+        }
+        document.write("<br>");
+    }
 </script>
